@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+}
+
+.post{
+    width:100%;
+    height:100%;
+
+}
+
+
+#bkcard {
+    background-color: rgba(0, 0, 0, .8);
+    width:30%;
+    height:100%;
+    z-index: 0;
+    color: white;
+    overflow-y: scroll;
+    padding-left: 3%;
+    padding-right: 5%;
+
+}
+
+
+#bkcard p {
+    color: white;
+    font-size: 12;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+#bkcard #credit {
+    font-size: 12;
+}
+
+
+#map {
+    z-index: -1;
+}
+
+#power-gauge2 {
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#power-gauge1 g.pointer {
+    fill: white;
+    stroke: lightgrey;
+}
+
+#power-gauge2 g.pointer {
+    fill: white;
+    stroke: lightgrey;
+}
+
+#power-gauge1 g.label text {
+    text-anchor: middle;
+    font-size: 10;
+    font-weight: bold;
+    fill: white;
+}
+
+#power-gauge2 g.label text {
+    text-anchor: middle;
+    font-size: 10;
+    font-weight: bold;
+    fill: white;
+}
+
+#gauges {
+  /*  float: left;*/
+    padding-top: 15;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartodb-legend{
+    position: absolute;
+    top:0;
+    left: 180;
+    width: 100;
+    background: transparent;
+}
+
+div.cartodb-legend{
+    background:none;
+    border:none;
+    box-shadow: none;
+}
+
+div.cartodb-legend.density li.graph div{
+    width:5;
+}
+
+#inside{
+    margin-top: 20;
+}
+
+#outside{
+    margin-top: 30;
+    color:#c51b8a;
+}
+
+@media (max-width:767) {
+
+#bkcard{
+    position:absolute;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+#bkcard h2,p {
+    display:none;
+}
+
+#bkcard h4{
+    font-size: 12;
+}
+
+#inside, #outside, #detect{
+    display:none;
+}
+
+#bkcard #subtitle{
+    margin-bottom: 0;
+    font-size: 16;
+}
+
+#menu{
+    margin-top:10;
+}
+
+#credit{
+    margin-top: 3;
+    margin-bottom: 10;
+}
+
+
+#gauges{
+    padding-top: 0;
+}
+
+}
+
+@media (min-width:768) {
+
+#bkcard{
+    position:absolute;
+    right:0;
+    width: 350;
+    height:100%;
+}
+        }

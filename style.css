@@ -146,12 +146,18 @@ div.cartodb-legend.density li.graph div{
 
 }
 
-@media (min-width:768) {
+@media (max-width:375px) {
 
 #bkcard{
-    position:absolute;
-    right:0;
-    width: 350;
+    position:fixed;
+    width: 375;
     height:100%;
 }
-        }
+#bkcard p, h5{
+    font-size:0.8em;
+}
+
+#bkcard h2{
+    font-size:1.5em;
+}
+}
